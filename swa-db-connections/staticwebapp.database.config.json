@@ -33,7 +33,13 @@
     "Config": {
       "source": {
         "object": "dbo.Config",
-        "type": "table"
+        "type": "table",
+        "permissions":[
+          {
+            "actions":["GET"],
+            "role": "anonymous"
+          }
+        ]
       },
       "graphql": {
         "enabled": true,
@@ -59,7 +65,13 @@
     "ImageData": {
       "source": {
         "object": "dbo.ImageData",
-        "type": "table"
+        "type": "table",
+        "permissions":[
+          {
+            "actions":["*"],
+            "role": "anonymous"
+          }
+        ]
       },
       "graphql": {
         "enabled": true,
@@ -85,7 +97,13 @@
     "SessionID": {
       "source": {
         "object": "dbo.SessionID",
-        "type": "table"
+        "type": "table",
+        "permissions":[
+          {
+            "actions":["*"],
+            "role": "anonymous"
+          }
+        ]
       },
       "graphql": {
         "enabled": true,
